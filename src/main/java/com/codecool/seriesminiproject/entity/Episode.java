@@ -23,8 +23,6 @@ public class Episode {
     @Transient
     private LocalDate releaseDate;
 
-    //TODO: enumerated LANGUAGE
-
     @ManyToOne
     private Season season;
 

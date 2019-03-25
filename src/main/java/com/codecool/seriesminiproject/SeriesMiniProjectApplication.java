@@ -1,6 +1,7 @@
 package com.codecool.seriesminiproject;
 
 import com.codecool.seriesminiproject.entity.Episode;
+import com.codecool.seriesminiproject.entity.Language;
 import com.codecool.seriesminiproject.entity.Season;
 import com.codecool.seriesminiproject.entity.Series;
 import com.codecool.seriesminiproject.repository.EpisodeRepository;
@@ -81,6 +82,7 @@ public class SeriesMiniProjectApplication {
 
             Series series = Series.builder()
                     .name("Desperate Housewives")
+                    .language(Language.ENGLISH)
                     .season(season)
                     .season(season2)
                     .build();

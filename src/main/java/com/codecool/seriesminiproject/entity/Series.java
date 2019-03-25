@@ -18,6 +18,9 @@ public class Series {
 
     private String name;
 
+    @Enumerated(EnumType.STRING)
+    private Language language;
+
     @ElementCollection
     @Singular
     @OneToMany(mappedBy = "series", cascade = CascadeType.PERSIST)
